@@ -1,0 +1,32 @@
+---
+openapi: 3.0.3
+info:
+  title: Generated API
+  version: "1.0"
+paths:
+  /park/{ident}/{period}:
+    get:
+      parameters:
+      - name: period
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+    parameters:
+    - name: ident
+      in: path
+      required: true
+      schema:
+        type: string
+    - name: ident
+      in: path
+      required: true
+      schema:
+        type: string
