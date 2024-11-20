@@ -4,14 +4,8 @@ info:
   title: Generated API
   version: "1.0"
 paths:
-  /park/{ident}/{period}:
+  /park/{ident}:
     get:
-      parameters:
-      - name: period
-        in: path
-        required: true
-        schema:
-          type: string
       responses:
         "200":
           description: OK
